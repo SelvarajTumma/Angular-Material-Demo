@@ -1,0 +1,33 @@
+<mat-toolbar color="primary" md-disable-backdrop>
+    <mat-toolbar-row>
+        <h1>Angular Material</h1>
+        <span class="spacer"></span>
+        <div class="contents" >
+            <a mat-button [routerLink]="['Registration']">Registration</a>
+            <a mat-button [routerLink]="['Login']">Login</a>
+            <a mat-button >Generate Hallticket</a>
+            <a mat-button >Marks Details</a>
+        </div>
+        <span class="spacer"></span>
+        <button mat-icon-button>
+            <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        </button>
+        </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container >
+    <mat-sidenav #sidenav md-disable-backdrop>
+        <mat-nav-list class="sidenav">
+            <a mat-button [routerLink]="['Registration']">Registration</a>
+            <a mat-button [routerLink]="['Login']">Login</a>
+            <a mat-button >Generate Hallticket</a>
+            <a mat-button >Marks Details</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div style="height: 90vh;">
+          <router-outlet></router-outlet>
+        </div>
+      </mat-sidenav-content>
+</mat-sidenav-container>
+

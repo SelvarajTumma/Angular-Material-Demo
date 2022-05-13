@@ -1,0 +1,11 @@
+.spacer{
+    flex: 1 1;
+}
+.contents{
+    justify-content: space-between;
+    font-size: 10px;
+}
+.sidenav{
+    display: flex;
+    flex-direction: column;
+}
