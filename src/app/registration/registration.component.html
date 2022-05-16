@@ -8,6 +8,12 @@
                     Enter valid Name
                 </mat-error>
             </mat-form-field>
+            <mat-form-field class="static">
+                <mat-label>Department</mat-label>
+                <mat-select id="dept" formControlName="Dept">
+                    <mat-option  *ngFor="let item of dept" [value]="item">{{item}}</mat-option>               
+                </mat-select>
+            </mat-form-field>
             <mat-form-field>
                 <input matInput placeholder="Enter Email" formControlName="Email">
                 <mat-error>

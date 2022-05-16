@@ -11,17 +11,26 @@ import { MatToolbarModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material';
 import { MatIconModule } from '@angular/material';
 import{MatSidenavModule,MatListModule} from '@angular/material';
+import { MatSelectModule } from '@angular/material';
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { MatCardModule,MatInputModule } from '@angular/material';
+
+import { MatTableModule } from '@angular/material';
+import { TableComponent } from './table/table.component';
+import { GridListComponent } from './grid-list/grid-list.component';
+
+import { MatGridListModule } from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     RegistrationComponent,
-    LoginComponent
+    LoginComponent,
+    TableComponent,
+    GridListComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +45,10 @@ import { MatCardModule,MatInputModule } from '@angular/material';
     FormsModule,
     ReactiveFormsModule,
     MatCardModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule,
+    MatTableModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
