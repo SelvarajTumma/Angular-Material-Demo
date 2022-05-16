@@ -23,6 +23,7 @@ import { TableComponent } from './table/table.component';
 import { GridListComponent } from './grid-list/grid-list.component';
 
 import { MatGridListModule } from '@angular/material';
+import { CardComponent } from './card/card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { MatGridListModule } from '@angular/material';
     RegistrationComponent,
     LoginComponent,
     TableComponent,
-    GridListComponent
+    GridListComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
