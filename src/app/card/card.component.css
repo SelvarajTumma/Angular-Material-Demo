@@ -1,0 +1,54 @@
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.mat-card{
+    max-width: 450px;
+    min-width: 280px;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 500ms;
+}
+.h2{
+    width: 200px;
+    height: min-content;
+}
+.img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.mat-card :hover{
+    transform: scale(1.05);
+}
+@media screen and (max-width:600px) {
+    .mat-card{
+        max-width: 230px;
+        min-width: 120px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10px 10px 10px;
+    }
+    .img{
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
+@media screen and (max-width:320px){
+    .mat-card{
+        max-width: 280px;
+        min-width: 200px;
+        height: auto;
+    }
+}
+@media screen and (max-width:480px){
+    .mat-catd{
+        max-width: 420px;
+        min-width: 300px;
+        height: auto;
+    }
+}

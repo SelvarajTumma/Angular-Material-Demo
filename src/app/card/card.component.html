@@ -1,1 +1,8 @@
-<p>card works!</p>
+<div  class="main">
+    <div class="products">
+        <mat-card *ngFor='let items of products'>
+            <h2>{{items.product_name}}</h2>
+            <img  src={{items.product_image}}><img>
+        </mat-card>
+    </div>
+</div>
